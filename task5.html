@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pattern</title>
+</head>
+<body>
+    <script>
+        const n = 5;
+
+        for (let i = 1; i <= n; i++) {
+            let row = "";
+
+            for (let j = 1; j <= n; j++) {
+                if (j < i) {
+                    row += "A ";
+                } else {
+                    row += String.fromCharCode(65 + i - 1) + " ";
+                }
+            }
+
+            document.write(row.trim() + "<br>");
+        }
+    </script>
+</body>
+</html>
