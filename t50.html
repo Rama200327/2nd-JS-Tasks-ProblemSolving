@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Times Original Ends With 1</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 1000; i++) {
+        let str = i.toString();
+        let reversed = "";
+        for (let j = str.length - 1; j >= 0; j--) {
+            reversed = reversed + str[j];
+        }
+        let result = (i * Number(reversed)).toString();
+        if (result[result.length - 1] == "1") {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

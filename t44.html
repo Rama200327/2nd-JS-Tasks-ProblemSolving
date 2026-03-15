@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Difference Divisible by 9</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 1000; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let reversed = "";
+        for (let j = str.length - 1; j >= 0; j--) {
+            reversed = reversed + str[j];
+        }
+        let diff = i - Number(reversed);
+        if (diff < 0) diff = diff * -1;
+        if (diff % 9 == 0) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

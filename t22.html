@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First Greater Last</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 100; i++) {
+        let str = i.toString();
+        let firstDigit = Number(str[0]);
+        let lastDigit = Number(str[str.length - 1]);
+        if (firstDigit > lastDigit) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

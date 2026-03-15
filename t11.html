@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <pre>
+    <script>
+        for (let i = 1; i <= 5; i++) {
+            for (let j = 1; j <= 5; j++) {
+                let result = i + " * " + j + " = " + (i * j);
+                while (result.length < 12) {
+                    result = result + " ";
+                }
+                document.write(result);
+            }
+            document.write("\n");
+        }
+    </script>
+    </pre>
+</body>
+</html>

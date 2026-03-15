@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+<pre><script>
+    let row = "";
+    for (let i = 1; i <= 30; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            row = row + "FizzBuzz ";
+        } else if (i % 3 == 0) {
+            row = row + "Fizz ";
+        } else if (i % 5 == 0) {
+            row = row + "Buzz ";
+        } else {
+            row = row + i + " ";
+        }
+    }
+    document.write(row);
+</script></pre>
+</body>
+</html>

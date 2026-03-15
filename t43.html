@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Square Ends With Same Number</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 1000; i++) {
+        let str = i.toString();
+        let square = (i * i).toString();
+        if (square.endsWith(str)) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

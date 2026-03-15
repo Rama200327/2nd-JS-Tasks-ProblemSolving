@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Same Digits</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 100; i++) {
+        let str = i.toString();
+        let same = true;
+        for (let j = 1; j < str.length; j++) {
+            if (str[j] != str[0]) {
+                same = false;
+            }
+        }
+        if (same && str.length > 1) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

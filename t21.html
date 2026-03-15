@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Sum</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 200; i++) {
+        let num = i;
+        let sum = 0;
+        while (num > 0) {
+            sum = sum + (num % 10);
+            num = Math.floor(num / 10);
+        }
+        if (sum == 5) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

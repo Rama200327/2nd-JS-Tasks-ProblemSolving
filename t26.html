@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reverse Divisible by 3</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 500; i++) {
+        let str = i.toString();
+        let reversed = "";
+        for (let j = str.length - 1; j >= 0; j--) {
+            reversed = reversed + str[j];
+        }
+        if (Number(reversed) % 3 == 0) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

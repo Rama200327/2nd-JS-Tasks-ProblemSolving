@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Square Last Equals First</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 300; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let firstDigit = Number(str[0]);
+        let lastDigit = Number(str[str.length - 1]);
+        if (lastDigit * lastDigit == firstDigit) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

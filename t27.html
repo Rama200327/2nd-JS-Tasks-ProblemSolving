@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Digit Difference 2</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 200; i++) {
+        let str = i.toString();
+        let valid = true;
+        if (str.length < 2) {
+            valid = false;
+        }
+        for (let j = 0; j < str.length - 1; j++) {
+            let diff = Number(str[j]) - Number(str[j + 1]);
+            if (diff < 0) diff = diff * -1;
+            if (diff != 2) {
+                valid = false;
+            }
+        }
+        if (valid) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Equals Sum Squared</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 1000; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let sum = 0;
+        let product = 1;
+        let valid = true;
+        for (let j = 0; j < str.length; j++) {
+            let digit = Number(str[j]);
+            if (digit == 0) {
+                valid = false;
+            }
+            sum = sum + digit;
+            product = product * digit;
+        }
+        if (valid && product == sum * sum) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exactly Two Equal Digits</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 300; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let found = false;
+        for (let j = 0; j < str.length; j++) {
+            let count = 0;
+            for (let k = 0; k < str.length; k++) {
+                if (str[k] == str[j]) {
+                    count++;
+                }
+            }
+            if (count == 2) {
+                found = true;
+            }
+        }
+        if (found) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

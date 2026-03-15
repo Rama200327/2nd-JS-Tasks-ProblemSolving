@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Divisible by Digit Product</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 300; i++) {
+        let str = i.toString();
+        let product = 1;
+        let valid = true;
+        for (let j = 0; j < str.length; j++) {
+            if (str[j] == "0") {
+                valid = false;
+            } else {
+                product = product * Number(str[j]);
+            }
+        }
+        if (valid && i % product == 0) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

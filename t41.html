@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum Equals Product</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 1000; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let sum = 0;
+        let product = 1;
+        for (let j = 0; j < str.length; j++) {
+            let digit = Number(str[j]);
+            sum = sum + digit;
+            product = product * digit;
+        }
+        if (sum == product) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>

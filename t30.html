@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Last Digit Sum</title>
+</head>
+<body>
+<pre><script>
+    for (let i = 1; i <= 300; i++) {
+        let str = i.toString();
+        if (str.length < 2) continue;
+        let lastDigit = Number(str[str.length - 1]);
+        let sum = 0;
+        for (let j = 0; j < str.length - 1; j++) {
+            sum = sum + Number(str[j]);
+        }
+        if (sum == lastDigit) {
+            document.write(i + "\n");
+        }
+    }
+</script></pre>
+</body>
+</html>
